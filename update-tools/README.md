@@ -34,6 +34,36 @@ nrm use <registry>
 ```sh
 nrm del <registry>
 ```
+
+## node 版本更新
+
+目前版本，v10.8.0
+> 使用nvm管理
+
+首先，卸载旧版本node
+
+For MacOS
+```sh
+sudo npm uninstall npm -g
+sudo rm -r /usr/local/lib/node*
+sudo rm -r /usr/local/bin/node*
+```
+其次，安装nvm
+```sh
+#修改https://raw.githubusercontent.com不能用的问题
+sudo vi /etc/hosts
+i (enter)
+151.101.76.133 raw.githubusercontent.com (last line enter)
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+
+再安装v10.8.0，安装最新node
+```sh
+nvm install 10.8.0
+nvm install stable
+```
+
 ## git bash 命令 <常用>
 1. 添加新分支到远程仓库
 
