@@ -12,7 +12,28 @@
 ```sh 
 sudo npm update -g @vue/cli
 ```
+2. 旧版本，`vue-cli`改版`@vue/cli`升级方案
 
+node要求：>= 8.9+，
+
+如果你还在用就旧版的node，建议使用nrm，在一个电脑上管理node多个版本
+
+> 安装
+```sh
+npm install -g nrm
+```
+> 添加自定义镜像源
+```sh
+nrm add <registry> <url> [home]
+```
+> 切换
+```sh
+nrm use <registry>
+```
+> 删除镜像源
+```sh
+nrm del <registry>
+```
 ## git bash 命令 <常用>
 1. 添加新分支到远程仓库
 
