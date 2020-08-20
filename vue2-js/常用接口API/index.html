@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset='utf-8'>
+    <title>API查询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="Keywords" content="API查询" />
+    <meta name="description" content="API查询" />
+    <meta name="author" content="心叶" />
+    <link rel="apple-touch-icon" sizes="52x52" href="52icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="72icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="120icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="144icon.png" />
+    <link rel="stylesheet" href="easycss-1.0.0.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./lib/luna-1.0.0.js"></script>
+    <script>
+        // 切换导航
+        function loadPage(type) {
+            window.history.pushState(null, null, "#/" + type);
+            $$('#pageTarget').attr('src', "./" + type + "/index.html");
+            $$('body>header>ul>li').removeClass('active').filter('[onclick=\'loadPage("' + type + '")\']').addClass('active');
+        };
+        // 初始化
+        $$(function () {
+            try {
+                loadPage(/#\/([^#]{1,})$/.exec(window.location.href)[1]);
+            } catch (e) {
+                loadPage('apis');
+            }
+        });
+    </script>
+    <style>
+        body>header>ul>li {
+            position: relative;
+        }
+
+        body>header>ul>li.active::after {
+            display: inline-block;
+            width: .1rem;
+            height: .1rem;
+            transform: rotate(45deg);
+            background-color: #f6f6f6;
+            position: absolute;
+            content: " ";
+            top: .45rem;
+            left: 50%;
+            margin-left: -.06rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li onclick='window.location.href="https://github.com/yelloxing/yelloxing.github.io"'>API查询</li>
+            <li onclick='loadPage("apis")'>API查询</li>
+            <li onclick='loadPage("notebooks")'>文档笔记</li>
+        </ul>
+    </header>
+    <iframe frameborder="0" id="pageTarget" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+</body>
+
+</html>
