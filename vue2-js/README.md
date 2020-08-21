@@ -17,10 +17,11 @@ GitHub地址：https://github.com/vuejs/vue
 
 > [箭头函数是ES6的特性](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-其他的ES6特性
-
+其他的ES6特性很容易在网上找到，ES6是2015年发布的js版本，全称是ECMA2015
 
 > 学习vue之前
+
+百度网盘贡献资料（含视频）：链接:https://pan.baidu.com/s/1P5-St4YxW6cXcN6F5o9Xew  密码:xyn8
 
 Mozilla web开发技术学习：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 
