@@ -1,0 +1,76 @@
+body>footer {
+    width: 10rem;
+    margin: auto;
+    line-height: 1rem;
+    font-size: .14rem;
+    color: #43515a;
+}
+
+body>section {
+    width: 10rem;
+    margin: auto;
+    margin-top: .1rem;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+body>section>.title {
+    font-size: .22rem;
+    line-height: 2em;
+}
+
+body>section>.name {
+    font-weight: 600;
+    color: #607D8B;
+    line-height: 2em;
+}
+
+body>section>.code {
+    background-color: #f6f6f6;
+    margin: .1rem 0;
+    padding: .1rem;
+    color: #435159;
+    font-size: .14rem;
+}
+
+body>section>.block {
+    text-indent: 2em;
+    line-height: 1.8em;
+}
+
+body>section>.warn {
+    line-height: 2em;
+    color: #435159;
+    font-size: .12rem;
+    text-indent: 2em;
+}
+
+body .btn {
+    width: 10rem;
+    margin: auto;
+    line-height: 2em;
+}
+
+body .btn>* {
+    line-height: 1.6em;
+    display: inline-block;
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-left: 1.6em;
+    font-size: .14rem;
+    cursor: pointer;
+    color: #53c1ec;
+}
+
+body .btn>*:not(:first-child) {
+    margin-left: .1rem;
+}
+
+body .btn>.download {
+    background-image: url('../image/download.png');
+}
+ul{
+    margin-left: 1em;
+}
