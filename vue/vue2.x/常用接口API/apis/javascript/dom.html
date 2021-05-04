@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset='utf-8'>
+    <title>API查询</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="Keywords" content="API查询" />
+    <meta name="description" content="API查询" />
+    <meta name="author" content="心叶" />
+    <link rel="apple-touch-icon" sizes="52x52" href="52icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="72icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="120icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="144icon.png" />
+    <link rel="stylesheet" href="../../easycss-1.0.0.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li onclick='window.location.href="https://github.com/yelloxing/yelloxing.github.io"'>API查询</li>
+        </ul>
+    </header>
+    <em class='position'>当前位置：API查询 / JavaScript文档 / DOM</em>
+    <table>
+        <tbody>
+            <tr>
+                <th>属性 / 方法</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementById()
+                </td>
+                <td>
+                    返回对拥有指定 id 的第一个对象的引用
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByTagName()
+                </td>
+                <td>
+                    返回带有指定标签名的对象集合
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByName()
+                </td>
+                <td>
+                    返回带有指定名称的对象集合
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <th>属性 / 方法</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>
+                    element.getAttribute()
+                </td>
+                <td>
+                    返回指定元素的属性值
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.setAttribute()
+                </td>
+                <td>
+                    设置或者改变指定属性并指定值
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.innerHTML
+                </td>
+                <td>
+                    设置或者返回元素的html内容
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.innerText
+                </td>
+                <td>
+                    设置或者返回元素的文本内容
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <th>属性 / 方法</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>
+                    element.appendChild()
+                </td>
+                <td>
+                    元素内部的结尾插入新结点，新结点由第一个参数指定
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.insertBefore()
+                </td>
+                <td>
+                    元素内部第二个参数指定的孩子结点前插入新结点
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.removeChild()
+                </td>
+                <td>
+                    删除元素的一个子元素，子元素由第一个参数指定
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.replaceChild(newnode,oldnode)
+                </td>
+                <td>
+                    替换一个子元素
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <th>属性 / 方法</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>
+                    document.defaultView.getComputedStyle()
+                </td>
+                <td>
+                    非IE浏览器获取全部样式，第一个参数是结点，第二个参数是伪类，不使用设置null，具体样式使用getPropertyValue(key)获取
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.currentStyle
+                </td>
+                <td>
+                    IE浏览器获取全部样式，具体样式使用getPropertyValue(key)获取
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    element.style
+                </td>
+                <td>
+                    设置或返回元素的样式属性(和上面二个方法对比，返回的是计算前的样式)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        Copyright&copy;API查询 2018 心叶
+    </footer>
+</body>
+
+</html>
