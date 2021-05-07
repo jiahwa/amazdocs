@@ -1,6 +1,6 @@
 # npm
 
-## npm cli install
+## npm cli 安装
 在package.json 同级目录下执行以下操作
 
 - 安装dependencies 和 devDependencies 中的所有 npm 包
@@ -21,23 +21,23 @@ eg: ERROR
 ```
 解释: 某些包依赖fsevents包,而fsevents包是MacOS系统下,在Windows/Linux下会提示警告,但不会安装
 
-## npm low version cause `can't find folder` error
+## npm 低版本引起 `can't find folder` 错误
 
-Accordation to my experience, npm <=v6.2.0, cannot support commannd: 
+根据我的经历 npm <= v6.2.0，不能支持命令: 
 
 `{"vue-loader-v16": "npm:vue-loader@^16.0.0-beta.3"}`,
 
-and new version v6.14.8+ don't have this problem.
+并且新版本v6.14.8 +都没有此问题。
 
-So, when it happend, upgrade npm version with command:
+因此，发生这种情况时，请使用以下命令升级npm版本：
 
 ```sh
 npm i -g npm
 ```
 
-## npm publish new packages
+## npm 发布新软件包
 
-> Attention: before your publishment, run `npm run build` or others scripts command to create files build, always a folder as `./dist` 
+> 注意：在发布之前，请运行npm run build或其他脚本命令来创建文件，并且经常将文件夹命名为./dist
 
 ```sh
 npm login

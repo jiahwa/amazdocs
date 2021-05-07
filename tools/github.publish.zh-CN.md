@@ -1,9 +1,9 @@
 # github publish
 
-## github发布版本
+## github 发布版本
 
 - alpha
 
 - beta
 
-- production
+- 生产
