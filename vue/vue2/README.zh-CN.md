@@ -3,7 +3,7 @@
 ## 目录介绍
 ```doc
 常用接口API	作为工具书查阅和补充
-dist		vue2.x源码，前端框架的实质就是自定义功能和用法的JavaScript
+dist		vue2 源码，前端框架的实质就是自定义功能和用法的JavaScript
 examples	vue官方在测试某些具体功能时给的例子，能看懂就证明已入门vue了
 README.md	之前请阅读和资料链接
 ```
