@@ -1,0 +1,24 @@
+{
+  "name": "amazdocs",
+  "version": "2.0.0",
+  "description": "This is about programming, in particular, about `blingbling-ideas` (good idea).",
+  "main": "readme.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiahwa/amazdocs.git"
+  },
+  "keywords": [
+    "amazdocs",
+    "docs",
+    "amaz"
+  ],
+  "author": "jiahwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiahwa/amazdocs/issues"
+  },
+  "homepage": "https://github.com/jiahwa/amazdocs#readme"
+}

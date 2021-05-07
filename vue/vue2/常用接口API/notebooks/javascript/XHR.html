@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset='utf-8'>
+    <title>API查询</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="Keywords" content="API查询" />
+    <meta name="description" content="API查询" />
+    <meta name="author" content="心叶" />
+    <link rel="apple-touch-icon" sizes="52x52" href="52icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="72icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="120icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="144icon.png" />
+    <link rel="stylesheet" href="../../easycss-1.0.0.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li onclick='window.location.href="https://github.com/yelloxing/yelloxing.github.io"'>API查询</li>
+        </ul>
+    </header>
+    <em class='position'>当前位置：文档笔记 / XMLHttpRequest请求发送方法</em>
+    <section>
+        <div class="title">请求流程</div>
+        <img src="../../image/xhr.png" alt="XHR请求流程">
+    </section>
+    <section>
+        <div class="title">GET请求用例</div>
+        <pre>
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                xmlhttp = new window.XMLHttpRequest();
+            } else {
+                xmlhttp = new window.ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        //todo
+                    } else {
+                        //todo
+                    }
+                }
+            };
+            xmlhttp.open('get', url, true);
+            xmlhttp.send();
+        </pre>
+    </section>
+    <footer>
+        Copyright&copy;API查询 2018 心叶
+    </footer>
+</body>
+
+</html>
