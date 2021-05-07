@@ -1,34 +1,35 @@
 # git
 
-## git 远端仓库更新
+## git remote repository update
 
 ```sh
-git remote #先查看 remote
-git remote <remote> #确认更改指定 remote
+git remote #view remote at first
+git remote <remote> #confirm change assignment remote
 git remote set-url origin <url>
 ```
 
-## 添加新分支到远程仓库
+## Add a new branch to the remote repository
 
-> 添加新分支到本地
+
+> Add new branch to local
 ```sh
 git branch <name>
 ```
-> 配置提交的远端仓库
+> configure the submitted remote repository
 ```sh
 git remote add <hostname> <url>
 ```
-> 推送当前新分支，关联本地和远端
+> Push the current new branch, associate local and remote
 ```sh
 git push --set-upstream <hostname> <name>
 ```
 
-> 删除远端分支
+> Delete remote branch
 ```sh
 git push origin --delete <name>
 ```
 
-## git 克隆
+## git clone
 
 ```sh
 git clone [--template=<template_directory>]
@@ -40,7 +41,7 @@ git clone [--template=<template_directory>]
           [--jobs <n>] [--] <repository> [<directory>]
 
 ```
-上面的写法规则，意味着如果你要clone到一个指定目录，要这么来写：
+The above rules of writing means that if you want to clone to a specified directory, you have to write like this：
 
 `git clone <reponsitory> <directory>`
 
@@ -49,7 +50,7 @@ eg:
 git clone https://github.com/vuejs/vuex.git node_modules/vuex
 ```
 
-## 前提：如果想恢复到历史某一版本的文件，请执行以下步骤
+## Prerequisite: If you want to restore a certain version of the file, please follow the steps below
 ```sh
 # Unstaged changes after reset
 git reset <commit hash> <file>
@@ -58,39 +59,39 @@ git reset <commit hash> <file>
 git checkout -- <file>
 ```
 
-## 添加 tag 标签
+## Add a tag
 
-查看
+view
 ```sh
 git tag
 ```
-添加版本v1.0.0，加备注
+Add version v1.0.0, add remarks
 ```sh
 git tag -a v1.0.0 -m 'release 1.0.0 version'
 ```
-推送到远程同步
+Push to remote sync
 ```sh
 git push <branch> <tag> 
 ```
-删除tag
+delete tag
 ```sh
 git tag -d <tag>
 git push origin :refs/tags/<tag>
 ```
 
-## git 永久删除大文件
+## git large file delete
 large file removed from git history, as it is a mistick commit
 
 ```sh
 du -d 1 -h
 ```
 
->从所有文件当中查询
+>serch for all files
 ```sh
 git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -5 | awk '{print$1}')"
 ```
 
-输出:
+output:
 ```info
 ee6e62e5c70dfe3d8d382f271aea2ad876d3f579 public/images/avatar.png
 c849ce91a9e7adf55d9124e9b5b842895121be70 public/images/verifycode.gif
@@ -98,18 +99,18 @@ c849ce91a9e7adf55d9124e9b5b842895121be70 public/images/verifycode.gif
 f3d2503fc2a44b5053b0837ebea6e87a2d339a43 src/assets/logo.png
 7e3b322909cd4a68cd2c91638414bcf44f675a22 yarn.lock
 ```
-(但不是我想要的)
+(but not the things i wanna)
 
->从本地git中删除文件
+>remove the file from local git
 
 ```sh
 git filter-branch --force --index-filter 'git rm -rf --cached --ignore-unmatch <your large commit file>' --prune-empty --tag-name-filter cat -- --all
 ```
-输入
+input
 ```sh
 git filter-branch --force --index-filter 'git rm -rf --cached --ignore-unmatch VX-UI页面效果图2.zip' --prune-empty --tag-name-filter cat -- --all
 ```
-输出
+output
 
 ```info
 Rewrite 127d411d67170815165f08cc71681894ae1eb6fc (27/68) (1 seconds passed, remaining 1 predicted)    rm 'VX-UI页面效果图2.zip'
@@ -148,13 +149,13 @@ v0.0.4 -> v0.0.4 (80b5564f6127007a2b75dfb983c015e2b3f23cb2 -> 80b5564f6127007a2b
 v0.0.6 -> v0.0.6 (52cabc7d5d2aca351581123e08d3b990b854e1fc -> 2c85fe4b11c0a658ccf48befe8fe8d590edecb3b)
 ```
 
->接着
+>then
 
 ```sh
 git push origin master --force
 ```
 
->最后
+>at last
 
 ```sh
 rm -rf .git/refs/original/
