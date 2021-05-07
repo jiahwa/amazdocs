@@ -62,9 +62,9 @@
 - [tracking](./tools/tracking.zh-CN.md)
 - [vuecli](./tools/vuecli.zh-CN.md)
 ## [typescript]
-[typescript]: ./typescript/readme.zh-CN.md
+[typescript]: ./typescript/README.zh-CN.md
 ## [vue]
-- [vue2.x](./vue/vue2.x/README.zh-CN.md)
+- [vue2](./vue/vue2/README.zh-CN.md)
 
 [vue]: ./vue/README.zh-CN.md.md
 

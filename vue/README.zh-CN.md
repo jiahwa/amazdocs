@@ -1,6 +1,6 @@
 # vue
 ## vue2
-More information, visit: [./vue2/README.md](./vue2/README.md)
+更多信息, 请访问: [./vue2/README.md](./vue2/README.md)
 ## vue3
 
 vue作者：[Vue3的设计过程](https://juejin.im/post/6844903823937372174)

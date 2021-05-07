@@ -62,9 +62,9 @@ This is about programming, in particular, about `blingbling-ideas` (good idea)
 - [tracking](./tools/tracking.md)
 - [vuecli](./tools/vuecli.md)
 ## [typescript]
-[typescript]: ./typescript/readme.md
+[typescript]: ./typescript/README.md
 ## [vue]
-- [vue2.x](./vue/vue2.x/README.md)
+- [vue2](./vue/vue2/README.md)
 
 [vue]: ./vue/README.md.md
 
