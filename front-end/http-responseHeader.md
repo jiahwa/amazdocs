@@ -1,4 +1,4 @@
 # http-responseHeader
 
-- Content-Disposition 如果是要求下载文件，值为`attachment;filename="[filename].[filetype]"`
-- X-frame-options 如果要兼容IE11的下载，要设置 sameorigin 同源，`X-frame-options: sameorigin`
+- Content-Disposition If it is required to download a file, the value is `attachment;filename="[filename].[filetype]"`
+- X-frame-options If you want to be compatible with IE11 download, you need to set sameorigin, `X-frame-options: sameorigin`
