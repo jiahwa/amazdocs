@@ -66,6 +66,6 @@ This is about programming, in particular, about `blingbling-ideas` (good idea)
 ## [vue]
 - [vue2](./vue/vue2/README.md)
 
-[vue]: ./vue/README.md.md
+[vue]: ./vue/README.md
 
 Also, the author of amaz [jiahwa](https://github.com/jiahwa) is looking for a good job -)

@@ -66,6 +66,6 @@
 ## [vue]
 - [vue2](./vue/vue2/README.zh-CN.md)
 
-[vue]: ./vue/README.zh-CN.md.md
+[vue]: ./vue/README.zh-CN.md
 
 另外，amaz的作者[jiahwa](https://github.com/jiahwa)也正在找一份好工作-)
