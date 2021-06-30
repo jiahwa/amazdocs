@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-wrap</title>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: 'PingFang SC';
+        }
+        div{
+            width:50px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    test:<div>aaa$aa</div>
+    <script>
+        var di = document.getElementsByTagName("div");
+        di[0].innerHTML=di[0].innerHTML.replace(/\$/g,"\u200B$")
+        // 无效 \u200B <wbr>
+        // https://stackoverflow.com/questions/24488950/css-to-break-a-line-only-on-a-certain-character
+    </script>
+</body>
+</html>
