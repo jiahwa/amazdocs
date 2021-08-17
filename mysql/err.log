@@ -1,0 +1,21 @@
+[root@VM-0-12-centos my.cnf.d]# systemctl status mysql.service
+● mysql.service - MySQL 5.7.28 database server
+   Loaded: loaded (/usr/lib/systemd/system/mysql.service; enabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Sun 2021-08-01 17:38:53 CST; 6s ago
+     Docs: man:mysqld(8)
+           http://dev.mysql.com/doc/refman/en/using-systemd.html
+  Process: 1471 ExecStart=/var/lib/mysql-5.7.28/bin/mysqld --daemonize (code=exited, status=1/FAILURE)
+  Process: 1459 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq 0 ]   && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1 (code=exited, status=0/SUCCESS)
+  Process: 1457 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+ Main PID: 1471 (code=exited, status=1/FAILURE)
+
+Aug 01 17:38:53 VM-0-12-centos systemd[1]: Starting MySQL 5.7.28 database server...
+Aug 01 17:38:53 VM-0-12-centos mysqld[1471]: mysqld: Can't change dir to '/usr/local/mysql/data/' (Errcode: 2 - No such fi...ctory)
+Aug 01 17:38:53 VM-0-12-centos mysqld[1471]: 2021-08-01T09:38:53.694582Z 0 [Warning] TIMESTAMP with implicit DEFAULT value...ails).
+Aug 01 17:38:53 VM-0-12-centos mysqld[1471]: 2021-08-01T09:38:53.694773Z 0 [Note] --secure-file-priv is set to NULL. Opera...sabled
+Aug 01 17:38:53 VM-0-12-centos mysqld[1471]: 2021-08-01T09:38:53.694821Z 0 [Note] /var/lib/mysql-5.7.28/bin/mysqld (mysqld...74 ...
+Aug 01 17:38:53 VM-0-12-centos systemd[1]: mysql.service: main process exited, code=exited, status=1/FAILURE
+Aug 01 17:38:53 VM-0-12-centos systemd[1]: Failed to start MySQL 5.7.28 database server.
+Aug 01 17:38:53 VM-0-12-centos systemd[1]: Unit mysql.service entered failed state.
+Aug 01 17:38:53 VM-0-12-centos systemd[1]: mysql.service failed.
+Hint: Some lines were ellipsized, use -l to show in full.
