@@ -90,3 +90,7 @@
 - One scan, or a simple interaction to retrieve text or content from an image, is currently based on OCR technology, but other implementations are unknown. There is some room for improvement, such as the principle of neural networks to improve it will be useful.
 
 - Faststone does not have a Mac version, the best use of Windows Metrics, color pipette, screenshots tools, one of which simulate the function of practical use. And now, I use Python to achieve this idea.
+
+- Preliminary ideas, from this document [from zero-realized and extended freely drawn sheets] (https://mp.weixin.qq.com/s/jjmkeka5vc-qt3xccankig), first based on freely drawn drawings, Draw automatic molding, combination when completing the closest goals.Second, on the basis of the drawing board, the regular document can be completed by the speed, just like the translation tool.
+
+- Another idea about the application, such as I want to realize a blog site, then look for the ideal blog in the Internet, and then imitate the hands to implement them, and gradually add your own good idea in the future.
