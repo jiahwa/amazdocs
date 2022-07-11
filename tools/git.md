@@ -162,3 +162,14 @@ rm -rf .git/refs/original/
 git reflog expire --expire=now --all
 git gc --prune=now
 ```
+
+## git submodule
+
+```sh
+git clone <repository> --recursive # Git clone the entire project recursively
+git submodule add <repository> path # add a submodule
+git submodule init # init submodule
+git submodule update # update submodule
+git submodule foreach git pull # pull all submodules
+git submodule foreach 'git pull origin master'
+```
